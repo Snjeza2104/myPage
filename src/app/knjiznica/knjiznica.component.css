@@ -1,0 +1,33 @@
+#mojtekst{
+  padding-bottom:20px;
+}
+
+.category-tile{
+  height:230px;
+  width:100%;
+  margin-bottom: 15px;
+  position:relative;
+  border: 2px solid black;
+  overflow:hidden;
+}
+
+.category-tile:hover, .category-tile:active{
+  border:1px solid white;
+  box-shadow: 2px 2px #888888;
+}
+
+.category-tile span{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:100%;
+  text-align:center;
+  text-transform: uppercase;
+  background-color:#000;
+  color:#fff;
+  opacity:.7;
+}
+
+.menu-item-tile{
+  height:200px;
+}

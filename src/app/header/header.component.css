@@ -3,3 +3,41 @@ header {
   border-radius:0;
   border:0;
 }
+
+img{
+	float: right;
+	margin-top:-90px;
+}
+
+#nav-list{
+  margin-top:10px;
+}
+
+#nav-list a{
+  color:white;
+  text-align: center;
+}
+
+#nav-list a:hover{
+  background: #FF4500;
+}
+
+#nav-list a span{
+  font-size: 1.8em;
+}
+
+#phone{
+  margin-top:5px;
+}
+
+#phone a{ /*Broj telefona*/
+  text-align:right;
+  padding-bottom: 0;
+}
+
+#phone div{
+  color:#FF4500;
+  text-align:right;
+  padding-right:15px;
+}
+
