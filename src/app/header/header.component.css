@@ -2,6 +2,8 @@ header {
   background-color:#006666;
   border-radius:0;
   border:0;
+  padding:50px;
+  padding-bottom:70px;
 }
 
 img{
@@ -41,3 +43,11 @@ img{
   padding-right:15px;
 }
 
+.active{
+  border: 1px solid white;
+  background-color: orange;
+}
+
+.glyphicon:active {
+  background-color: orange;
+}

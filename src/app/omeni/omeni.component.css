@@ -1,0 +1,25 @@
+/*O meni*/
+.active{
+  background-color:#FF4500;
+  color:#006666;
+}
+
+#zivotopis{
+  float:left;
+}
+
+#slika{
+  float:right;
+}
+
+/*Knjižnica*/
+#mojtekst{
+  padding-bottom:20px;
+}
+
+.main-content{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}

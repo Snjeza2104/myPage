@@ -1,0 +1,27 @@
+<div fxFlex fxFlexOffset="20px" class="form-size">
+	<h3>Upis nove knjige</h3>
+	<form novalidate [formGroup]="knjigaForm" (ngSubmit)="onSubmit()">
+		<p>
+			<mat-form-field class="half-width">
+				<input matInput formControlName="autor" placeholder="Autor" type="text">
+			</mat-form-field>
+			<mat-form-field class="half-width">
+				<input matInput formControlName="imeknjige" placeholder="Ime knjige" type="text">
+			</mat-form-field>
+		</p>
+		<p>
+			<mat-form-field class="half-width">
+				<input matInput formControlName="izdavac" placeholder="Izdavač" type="text">
+			</mat-form-field>
+			<mat-form-field class="half-width">
+				<input matInput formControlName="godinaizdanja" placeholder="Godina izdanja" type="text">
+			</mat-form-field>
+		</p>
+		<p>
+			<mat-form-field class="half-width">
+				<input matInput formControlName="slika" placeholder="Link za sliku" type="text">
+			</mat-form-field>
+		</p>
+		<button type="submit" mat-button>Unesi</button>
+	</form>
+</div>

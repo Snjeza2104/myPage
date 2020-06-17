@@ -45,3 +45,9 @@
       </div>
     </section>
   </div><!--main-content -->
+  <ul>
+    <li *ngFor="let knjiga of knjige">
+      <img src="{{knjiga.slika}}" height="100px">
+      {{knjiga.autor}}, {{knjiga.imeknjige}}
+    </li>
+  </ul>
