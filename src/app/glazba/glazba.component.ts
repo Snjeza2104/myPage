@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Pjesma} from '../shared/pjesma';
+import {PJESME} from '../shared/pjesme'
 
 @Component({
   selector: 'app-glazba',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./glazba.component.css']
 })
 export class GlazbaComponent implements OnInit {
+
+	pjesme: Pjesma[]=PJESME;
 
   constructor() { }
 

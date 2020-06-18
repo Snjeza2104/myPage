@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Knjiga} from '../shared/knjiga';
-import {KNJIGE} from '../shared/knjige';
+import {KnjigaService} from '../services/knjiga.service';
 
 @Component({
   selector: 'app-knjiznica',
@@ -9,11 +9,15 @@ import {KNJIGE} from '../shared/knjige';
 })
 export class KnjiznicaComponent implements OnInit {
 
-	knjige: Knjiga[]=KNJIGE;
+	knjige: Knjiga[];
 
-  constructor() { }
+  constructor(private knjigaService: KnjigaService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.knjigaService.getKnjige()
+    .then((knjige)=>this.knjige=knjige);
   }
+
+  
 
 }

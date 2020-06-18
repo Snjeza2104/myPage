@@ -1,5 +1,7 @@
 input{
-	border:1px solid black;
+	border-bottom:1px solid white;
+	padding-top: 55px;
+	margin-bottom:30px;
 
 }
 
@@ -16,5 +18,8 @@ input{
 }
 
 button{
-	background-color: green;
+	background-color: #006666;
+}
+mat-error{
+	color: #006666;
 }

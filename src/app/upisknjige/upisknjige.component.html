@@ -1,27 +1,32 @@
 <div fxFlex fxFlexOffset="20px" class="form-size">
 	<h3>Upis nove knjige</h3>
-	<form novalidate [formGroup]="knjigaForm" (ngSubmit)="onSubmit()">
+	<form novalidate [formGroup]="knjigaForm" #fform="ngForm" (ngSubmit)="onSubmit()">
 		<p>
 			<mat-form-field class="half-width">
-				<input matInput formControlName="autor" placeholder="Autor" type="text">
+				<input matInput formControlName="autor" placeholder="Autor" type="text" required>
+				<mat-error *ngIf="knjigaForm.get('autor').hasError('required') && knjigaForm.get('autor').touched">Autor je potreban.</mat-error>
 			</mat-form-field>
 			<mat-form-field class="half-width">
-				<input matInput formControlName="imeknjige" placeholder="Ime knjige" type="text">
+				<input matInput formControlName="imeknjige" placeholder="Ime knjige" type="text" required>
+				<mat-error *ngIf="knjigaForm.get('imeknjige').hasError('required') && knjigaForm.get('imeknjige').touched">Navedite ime knjige.</mat-error>
 			</mat-form-field>
 		</p>
 		<p>
 			<mat-form-field class="half-width">
-				<input matInput formControlName="izdavac" placeholder="Izdavač" type="text">
+				<input matInput formControlName="izdavac" placeholder="Izdavač" type="text" required>
+				<mat-error *ngIf="knjigaForm.get('izdavac').hasError('required') && knjigaForm.get('izdavac').touched">Navedite izdavača.</mat-error>
 			</mat-form-field>
 			<mat-form-field class="half-width">
-				<input matInput formControlName="godinaizdanja" placeholder="Godina izdanja" type="text">
+				<input matInput formControlName="godinaizdanja" placeholder="Godina izdanja" type="text" required>
+				<mat-error *ngIf="knjigaForm.get('godinaizdanja').hasError('required') && knjigaForm.get('godinaizdanja').touched">Navedite godinu izdanja.</mat-error>
 			</mat-form-field>
 		</p>
 		<p>
 			<mat-form-field class="half-width">
-				<input matInput formControlName="slika" placeholder="Link za sliku" type="text">
+				<input matInput formControlName="slika" placeholder="Link za sliku" type="text" required>
+				<mat-error *ngIf="knjigaForm.get('slika').hasError('required') && knjigaForm.get('slika').touched">Navedite link za sliku.</mat-error>
 			</mat-form-field>
 		</p>
-		<button type="submit" mat-button>Unesi</button>
+		<button type="submit" mat-button [disabled]="knjigaForm.invalid">Unesi</button>
 	</form>
 </div>

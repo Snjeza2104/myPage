@@ -1,1 +1,7 @@
-<p>glazba works!</p>
+<h3>Ovdje su moji coveri s bubnjevima - perkusijama</h3>
+<ul>
+	<li *ngFor="let pjesma of pjesme">
+		{{pjesma.instrument}}: {{pjesma.imepjesme}}<br><a href="{{pjesma.video}}" tagret="_blank">{{pjesma.video}}</a> <br>
+		<!--<iframe width="560" height="315" src="{{pjesma.video}}" frameborder="0" allowfullscreen></iframe>-->
+	</li>
+</ul>
