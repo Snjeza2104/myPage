@@ -15,7 +15,7 @@ export class KnjiznicaComponent implements OnInit {
 
   ngOnInit() {
     this.knjigaService.getKnjige()
-    .then((knjige)=>this.knjige=knjige);
+    .subscribe((knjige)=>this.knjige=knjige);
   }
 
   

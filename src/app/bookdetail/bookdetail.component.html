@@ -1,0 +1,42 @@
+<div class="container"
+    fxLayout="row wrap"
+    fxLayout.sm="column"
+    fxLayout.xs="column"
+    fxLayoutAlign.gt-md="space-around center"
+    fxLayoutGap="10px" 
+    fxLayoutGap.xs="0">
+
+  <div fxFlex="100">
+    <div>
+        <h3 *ngIf="knjiga">{{knjiga.imeknjige | uppercase}}</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex="40" *ngIf="knjiga">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>{{knjiga.imeknjige | uppercase}}</h3>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src={{knjiga.slika}} alt={{knjiga.imeknjige}}>
+      <mat-card-content>
+        <p>{{knjiga.autor}}: {{knjiga.imeknjige}}<br>
+    		{{knjiga.izdavac}}, {{knjiga.godinaizdanja}}
+        </p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-button [routerLink]="['/bookdetail', prev]">prethodni</button>
+        <button mat-button (click)="goBack()">BACK</button>
+        <span class="flex-spacer"></span>
+        <button mat-button [routerLink]="['/bookdetail', next]">slijedeći</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+   <div [hidden]="knjiga">
+    <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>
+
+</div>

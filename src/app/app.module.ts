@@ -29,6 +29,7 @@ import { KnjiznicaComponent } from './knjiznica/knjiznica.component';
 import { GlazbaComponent } from './glazba/glazba.component';
 import { OmeniComponent } from './omeni/omeni.component';
 import { UpisknjigeComponent } from './upisknjige/upisknjige.component';
+import { BookdetailComponent } from './bookdetail/bookdetail.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UpisknjigeComponent } from './upisknjige/upisknjige.component';
     KnjiznicaComponent,
     GlazbaComponent,
     OmeniComponent,
-    UpisknjigeComponent
+    UpisknjigeComponent,
+    BookdetailComponent
   ],
   imports: [
     BrowserModule,

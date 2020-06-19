@@ -1,4 +1,3 @@
-  <div id="nazovi" class="text-center visible-xs">Nazovi</div>
   <div id="main-content" class="container">
      <h2 id="menu-categories-title" class="text-center">Moja knjižnica</h2>
     <div id="mojtekst" class="text-center">
@@ -41,7 +40,7 @@
   </div><!--main-content -->
   <div *ngIf="knjige">
   <ul>
-    <li *ngFor="let knjiga of knjige">
+    <li *ngFor="let knjiga of knjige" [routerLink]="['/bookdetail', knjiga.id]">
       <img src="{{knjiga.slika}}" height="100px">
       {{knjiga.autor}}, {{knjiga.imeknjige}}
     </li>
