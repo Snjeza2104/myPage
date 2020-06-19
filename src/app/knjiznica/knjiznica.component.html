@@ -1,9 +1,3 @@
- <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:tel:##########">
-      <span class="glyphicon glyphicon-earphone"></span>
-      099 877 1793
-    </a>
-  </div><!--call-btn -->
   <div id="nazovi" class="text-center visible-xs">Nazovi</div>
   <div id="main-content" class="container">
      <h2 id="menu-categories-title" class="text-center">Moja knjižnica</h2>
@@ -12,7 +6,7 @@
     </div>
     <section class="row"> <!--Knjige su navedene kao kategorije u redu -->
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="strucneknjige.html">
+        <a href="#">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/prvibox.jpg" alt="Stručne knjige">
             <span>Stručne knjige</span>
@@ -20,7 +14,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="duhovnaliteratura.html">
+        <a href="#">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/knjige2.jpeg" alt="Duhovna literatura">
             <span>Duhovna literatura</span>
@@ -28,7 +22,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="enciklopedije.html">
+        <a href="#">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/knjige3.jpeg" alt="Enciklopedije">
             <span>Enciklopedije</span>
@@ -36,7 +30,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="ostalo.html">
+        <a href="#">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/knjige4.jpeg" alt="Ostalo">
             <span>Ostalo</span>
@@ -45,9 +39,14 @@
       </div>
     </section>
   </div><!--main-content -->
+  <div *ngIf="knjige">
   <ul>
     <li *ngFor="let knjiga of knjige">
       <img src="{{knjiga.slika}}" height="100px">
       {{knjiga.autor}}, {{knjiga.imeknjige}}
     </li>
   </ul>
+</div>
+<div [hidden]="knjige">
+  <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  </div>

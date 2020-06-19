@@ -20,7 +20,7 @@ img{
   text-align: center;
 }
 
-#nav-list a:hover{
+#nav-list a:hover, #nav-list a:active{
   background: #FF4500;
 }
 
@@ -43,11 +43,6 @@ img{
   padding-right:15px;
 }
 
-.active{
-  border: 1px solid white;
-  background-color: orange;
-}
 
-.glyphicon:active {
-  background-color: orange;
-}
+
+
