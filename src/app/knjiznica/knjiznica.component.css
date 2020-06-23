@@ -33,5 +33,10 @@
 }
 
 mat-spinner{
-  background-color: orange;
+  stroke: #006666;
+}
+
+li{
+  list-style-type: none;
+  padding:10px;
 }

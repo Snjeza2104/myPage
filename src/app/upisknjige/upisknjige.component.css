@@ -23,3 +23,9 @@ button{
 mat-error{
 	color: #006666;
 }
+mat-option{
+	background-color:orange;
+}
+mat-option:nth-child(0){
+	padding-top: -80px;
+}

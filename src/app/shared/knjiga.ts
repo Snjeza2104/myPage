@@ -5,4 +5,7 @@ export class Knjiga{
 	izdavac: string;
 	godinaizdanja: number;
 	slika: string;
+	tip: string;
 }
+
+export const TipKnjige = ['stručna', 'duhovna', 'enciklopedija', 'ostalo'];

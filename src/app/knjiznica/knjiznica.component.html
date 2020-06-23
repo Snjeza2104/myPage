@@ -5,7 +5,7 @@
     </div>
     <section class="row"> <!--Knjige su navedene kao kategorije u redu -->
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="#">
+        <a routerLink="/strucna">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/prvibox.jpg" alt="Stručne knjige">
             <span>Stručne knjige</span>
@@ -13,7 +13,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="#">
+        <a routerLink="/duhovna">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/knjige2.jpeg" alt="Duhovna literatura">
             <span>Duhovna literatura</span>
@@ -21,7 +21,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="#">
+        <a routerLink="/enciklopedije">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/knjige3.jpeg" alt="Enciklopedije">
             <span>Enciklopedije</span>
@@ -29,7 +29,7 @@
         </a>
       </div>
       <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
-        <a href="#">
+        <a routerLink="/ostalo">
           <div class="category-tile">
             <img width="270" height="230" src="../assets/images/knjige4.jpeg" alt="Ostalo">
             <span>Ostalo</span>
@@ -47,5 +47,5 @@
   </ul>
 </div>
 <div [hidden]="knjige">
-  <mat-spinner></mat-spinner><h4>Loading . . . Please Wait</h4>
+  <mat-spinner></mat-spinner><h4>Učitava se . . . Molimo pričekajte</h4>
   </div>

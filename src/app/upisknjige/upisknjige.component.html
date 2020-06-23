@@ -4,28 +4,33 @@
 		<p>
 			<mat-form-field class="half-width">
 				<input matInput formControlName="autor" placeholder="Autor" type="text" required>
-				<mat-error *ngIf="knjigaForm.get('autor').hasError('required') && knjigaForm.get('autor').touched">Autor je potreban.</mat-error>
+				<mat-error *ngIf="formErrors.autor">{{formErrors.autor}}</mat-error>
 			</mat-form-field>
 			<mat-form-field class="half-width">
 				<input matInput formControlName="imeknjige" placeholder="Ime knjige" type="text" required>
-				<mat-error *ngIf="knjigaForm.get('imeknjige').hasError('required') && knjigaForm.get('imeknjige').touched">Navedite ime knjige.</mat-error>
+				<mat-error *ngIf="formErrors.imeknjige">{{formErrors.imeknjige}}</mat-error>
 			</mat-form-field>
 		</p>
 		<p>
 			<mat-form-field class="half-width">
 				<input matInput formControlName="izdavac" placeholder="Izdavač" type="text" required>
-				<mat-error *ngIf="knjigaForm.get('izdavac').hasError('required') && knjigaForm.get('izdavac').touched">Navedite izdavača.</mat-error>
+				<mat-error *ngIf="formErrors.izdavac">{{formErrors.izdavac}}</mat-error>
 			</mat-form-field>
 			<mat-form-field class="half-width">
-				<input matInput formControlName="godinaizdanja" placeholder="Godina izdanja" type="text" required>
-				<mat-error *ngIf="knjigaForm.get('godinaizdanja').hasError('required') && knjigaForm.get('godinaizdanja').touched">Navedite godinu izdanja.</mat-error>
+				<input matInput formControlName="godinaizdanja" placeholder="Godina izdanja" type="text" pattern="[0-9]*" required>
+				<mat-error *ngIf="formErrors.godinaizdanja">{{formErrors.godinaizdanja}}</mat-error>
 			</mat-form-field>
 		</p>
 		<p>
 			<mat-form-field class="half-width">
 				<input matInput formControlName="slika" placeholder="Link za sliku" type="text" required>
-				<mat-error *ngIf="knjigaForm.get('slika').hasError('required') && knjigaForm.get('slika').touched">Navedite link za sliku.</mat-error>
+				<mat-error *ngIf="formErrors.slika">{{formErrors.slika}}</mat-error>
 			</mat-form-field>
+			<mat-select placeholder="Tip knjige" formControlName="tipKnjige">
+            <mat-option *ngFor="let tip of tipKnjige" [value]="tip">
+              {{ tip }}
+            </mat-option>
+          </mat-select>
 		</p>
 		<button type="submit" mat-button [disabled]="knjigaForm.invalid">Unesi</button>
 	</form>

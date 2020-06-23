@@ -1,0 +1,13 @@
+<h3>Duhovna literatura u mojoj knjižnici</h3>
+<div *ngIf="knjige">
+  <ul>
+    <li *ngFor="let knjiga of knjige" [routerLink]="['/bookdetail', knjiga.id]">
+      <div *ngIf="knjiga.tip=='duhovna'">
+      <img src="{{knjiga.slika}}" height="100px">
+      {{knjiga.autor}}, {{knjiga.imeknjige}}</div>
+    </li>
+  </ul>
+</div>
+<div [hidden]="knjige">
+  <mat-spinner></mat-spinner><h4>Učitava se . . . Molimo pričekajte</h4>
+  </div>

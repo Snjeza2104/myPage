@@ -2,3 +2,6 @@ button{
 	background-color:#006666;
 	color:white;
 }
+mat-spinner{
+  stroke: #006666;
+}

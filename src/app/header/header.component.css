@@ -20,8 +20,18 @@ img{
   text-align: center;
 }
 
-#nav-list a:hover, #nav-list a:active{
+#nav-list a:hover{
   background: #FF4500;
+}
+
+#nav-list a:active{
+  border:1px solid white;
+  background-color: #006666;
+}
+
+.active{
+  border:1px solid white;
+  background-color: #006666;
 }
 
 #nav-list a span{

@@ -30,6 +30,10 @@ import { GlazbaComponent } from './glazba/glazba.component';
 import { OmeniComponent } from './omeni/omeni.component';
 import { UpisknjigeComponent } from './upisknjige/upisknjige.component';
 import { BookdetailComponent } from './bookdetail/bookdetail.component';
+import { DuhovnaComponent } from './duhovna/duhovna.component';
+import { OstaloComponent } from './ostalo/ostalo.component';
+import { StrucnaComponent } from './strucna/strucna.component';
+import { EnciklopedijeComponent } from './enciklopedije/enciklopedije.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { BookdetailComponent } from './bookdetail/bookdetail.component';
     GlazbaComponent,
     OmeniComponent,
     UpisknjigeComponent,
-    BookdetailComponent
+    BookdetailComponent,
+    DuhovnaComponent,
+    OstaloComponent,
+    StrucnaComponent,
+    EnciklopedijeComponent
   ],
   imports: [
     BrowserModule,
