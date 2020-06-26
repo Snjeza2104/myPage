@@ -33,5 +33,15 @@
           </mat-select>
 		</p>
 		<button type="submit" mat-button [disabled]="knjigaForm.invalid">Unesi</button>
+		<mat-list *ngIf="knjigaForm.valid">
+    <mat-list-item> <br><br><br><br><br>
+      {{knjigaForm.get('autor').value}} <br>
+        {{knjigaForm.get('imeknjige').value}} <br>
+        {{knjigaForm.get('izdavac').value}} <br>
+        {{knjigaForm.get('godinaizdanja').value}} <br>
+        {{knjigaForm.get('slika').value}} <br>
+      	{{knjigaForm.get('tipKnjige').value}} <br>
+    </mat-list-item>
+    </mat-list>
 	</form>
 </div>

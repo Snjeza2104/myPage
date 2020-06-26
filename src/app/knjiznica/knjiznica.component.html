@@ -40,12 +40,16 @@
   </div><!--main-content -->
   <div *ngIf="knjige">
   <ul>
-    <li *ngFor="let knjiga of knjige" [routerLink]="['/bookdetail', knjiga.id]">
+    <li *ngFor="let knjiga of knjige" [routerLink]="['/bookdetail', knjiga.id]" appHighlight>
       <img src="{{knjiga.slika}}" height="100px">
       {{knjiga.autor}}, {{knjiga.imeknjige}}
     </li>
   </ul>
 </div>
-<div [hidden]="knjige">
+<div [hidden]="knjige || errMess">
   <mat-spinner></mat-spinner><h4>Učitava se . . . Molimo pričekajte</h4>
+  <div fxFlex *ngIf="errMess">
+    <h2>Error</h2>
+    <h4>{{errMess}}</h4>
+  </div>
   </div>

@@ -12,6 +12,7 @@ export class UpisknjigeComponent implements OnInit {
 	knjigaForm: FormGroup;
 	knjiga: Knjiga;
   tipKnjige = TipKnjige;
+  knjigacopy: Knjiga;
 
   formErrors={
   'autor':'',
@@ -59,6 +60,12 @@ export class UpisknjigeComponent implements OnInit {
   onSubmit(){
   this.knjiga=this.knjigaForm.value;
   console.log(this.knjiga);
+/*  this.knjigacopy.push(this.knjiga);
+  this.knjigaService.putKnjiga(this.knjigacopy)
+  .subscribe(knjiga=>{
+    this.knjiga=knjiga; this.knjigacopy=knjiga;
+  }, errmess=>{this.knjiga=null; this.knjigacopy=null; this.errMsg=<any>errmess;});
+  */
   this.knjigaForm.reset({
     id:'',
     autor:'',

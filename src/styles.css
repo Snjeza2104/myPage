@@ -4,3 +4,10 @@ body{
   background-color:#FF4500;
   font-family: "Love Ya Like A Sister", sans-serif;
 }
+
+.highlight{
+	background-color: #EE3400;
+	border: 1px solid #FF4500;
+	z-index:1;
+	transform:scale(1.01);
+}

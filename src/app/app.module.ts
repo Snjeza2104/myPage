@@ -18,6 +18,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { HttpClientModule } from '@angular/common/http';
 
 import 'hammerjs';
 
@@ -34,6 +35,11 @@ import { DuhovnaComponent } from './duhovna/duhovna.component';
 import { OstaloComponent } from './ostalo/ostalo.component';
 import { StrucnaComponent } from './strucna/strucna.component';
 import { EnciklopedijeComponent } from './enciklopedije/enciklopedije.component';
+import { HighlightDirective } from './directives/highlight.directive';
+
+import { baseURL } from './shared/baseurl';
+
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +55,8 @@ import { EnciklopedijeComponent } from './enciklopedije/enciklopedije.component'
     DuhovnaComponent,
     OstaloComponent,
     StrucnaComponent,
-    EnciklopedijeComponent
+    EnciklopedijeComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
@@ -69,9 +76,11 @@ import { EnciklopedijeComponent } from './enciklopedije/enciklopedije.component'
     MatSelectModule,
     MatSlideToggleModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule 
+    MatProgressSpinnerModule,
+    HttpClientModule 
   ],
-  providers: [],
+  providers: [{provide: 'BaseURL', useValue:baseURL},
+                ProcessHTTPMsgService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

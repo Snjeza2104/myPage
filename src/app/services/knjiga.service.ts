@@ -1,26 +1,41 @@
 import { Injectable } from '@angular/core';
 import{ Knjiga } from '../shared/knjiga';
-import { KNJIGE } from '../shared/knjige';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
-import { delay } from 'rxjs/operators';
+import { delay, map, catchError } from 'rxjs/operators';
+import { baseURL } from '../shared/baseurl';
+import { ProcessHTTPMsgService } from './process-httpmsg.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class KnjigaService {
 
-  constructor() { }
+  constructor(private http: HttpClient, private processHTTPMsgService: ProcessHTTPMsgService) { }
 
 getKnjige(): Observable<Knjiga[]> {
-    return of(KNJIGE).pipe(delay(2000));
+    return this.http.get<Knjiga[]>(baseURL + 'knjige')
+    .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 
   getKnjigaIds(): Observable<string[] | any> {
-    return of(KNJIGE.map(knjiga => knjiga.id ));
+    return this.getKnjige().pipe(map(knjige=>knjige.map(knjiga=>knjiga.id)))
+    .pipe(catchError(error=>error));
   }
 
   getKnjiga(id: string): Observable<Knjiga> {
-    return of(KNJIGE.filter((knjiga) => (knjiga.id === id))[0]).pipe(delay(2000));
+    return this.http.get<Knjiga>(baseURL + 'knjige/' +id)
+    .pipe(catchError(this.processHTTPMsgService.handleError));;
+  }
+
+  putKnjiga(knjiga:Knjiga): Observable<Knjiga>{
+    const httpOptions={
+      headers: new HttpHeaders({
+      'Content-Type':'application/json'
+      })
+    };
+    return this.http.put<Knjiga>(baseURL+'knjige/'+knjiga.id, knjiga, httpOptions)
+    .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 
 import { Knjiga } from '../shared/knjiga';
 import { KnjigaService } from '../services/knjiga.service';
@@ -20,15 +20,17 @@ export class BookdetailComponent implements OnInit {
   knjigaIds: string[];
   prev: string;
   next: string;
+  errMess: string;
 
   constructor(private knjigaservice: KnjigaService,
     private route: ActivatedRoute,
-    private location: Location) { }
+    private location: Location,
+    @Inject('BaseURL') public BaseURL) { }
 
   ngOnInit() {
     this.knjigaservice.getKnjigaIds().subscribe(knjigaIds => this.knjigaIds = knjigaIds);
     this.route.params.pipe(switchMap((params: Params) => this.knjigaservice.getKnjiga(params['id'])))
-    .subscribe(knjiga => { this.knjiga = knjiga; this.setPrevNext(knjiga.id); });
+    .subscribe(knjiga => { this.knjiga = knjiga; this.setPrevNext(knjiga.id); }, errmess=>this.errMess=<any>errmess);
   }
 
   setPrevNext(knjigaId: string) {

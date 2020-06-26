@@ -35,8 +35,12 @@
       </mat-card-actions>
     </mat-card>
   </div>
-   <div [hidden]="knjiga">
+   <div [hidden]="knjiga || errMess">
     <mat-spinner></mat-spinner><h4>Učitava se... Molimo pričekajte.</h4>
+    <div fxFlex *ngIf="errMess">
+    <h2>Error</h2>
+    <h4>{{errMess}}</h4>
+  </div>
   </div>
 
 </div>
