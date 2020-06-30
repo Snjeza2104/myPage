@@ -7,11 +7,27 @@ import { Params, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { switchMap } from 'rxjs/operators';
 
+import { trigger, state, style, animate, transition } from '@angular/animations';
+
 
 @Component({
   selector: 'app-bookdetail',
   templateUrl: './bookdetail.component.html',
-  styleUrls: ['./bookdetail.component.css']
+  styleUrls: ['./bookdetail.component.css'],
+
+  animations: [
+    trigger('visibility', [
+        state('shown', style({
+            transform: 'scale(1.0)',
+            opacity: 1
+        })),
+        state('hidden', style({
+            transform: 'scale(0.5)',
+            opacity: 0
+        })),
+        transition('* => *', animate('0.5s ease-in-out'))
+    ])
+  ]
 })
 export class BookdetailComponent implements OnInit {
 
@@ -22,6 +38,8 @@ export class BookdetailComponent implements OnInit {
   next: string;
   errMess: string;
 
+  visibility='shown';
+
   constructor(private knjigaservice: KnjigaService,
     private route: ActivatedRoute,
     private location: Location,
@@ -29,8 +47,9 @@ export class BookdetailComponent implements OnInit {
 
   ngOnInit() {
     this.knjigaservice.getKnjigaIds().subscribe(knjigaIds => this.knjigaIds = knjigaIds);
-    this.route.params.pipe(switchMap((params: Params) => this.knjigaservice.getKnjiga(params['id'])))
-    .subscribe(knjiga => { this.knjiga = knjiga; this.setPrevNext(knjiga.id); }, errmess=>this.errMess=<any>errmess);
+    
+    this.route.params.pipe(switchMap((params: Params) => {this.visibility='hidden'; return this.knjigaservice.getKnjiga(params['id']);}))
+    .subscribe(knjiga => { this.knjiga = knjiga; this.setPrevNext(knjiga.id); this.visibility='shown';}, errmess=>this.errMess=<any>errmess);
   }
 
   setPrevNext(knjigaId: string) {
