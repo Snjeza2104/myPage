@@ -1,251 +1,292 @@
 {
-  "knjige": [{
-  "id": "0",
-  "autor": "sv. Franjo Saleški",
-  "imeknjige": "Filotea",
-  "izdavac": "Naklada sv. Antuna",
-  "godinaizdanja": "2009",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/2/1/2190.jpg",
-  "tip": "duhovna"
-},{
-  "id": "1",
-  "autor": "Michel Tournade",
-  "imeknjige": "Filotea 21. stoljeća",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2015",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/4/9/4968.jpg",
-  "tip": "duhovna"
-},{
-  "id": "2",
-  "autor": "papa Franjo",
-  "imeknjige": "Sreća u ovom životu",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2018",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/s/r/sreca-u-ovom-zivotu.jpg",
-  "tip": "duhovna"
-},
-{
-  "id": "3",
-  "autor": "Kristina Susac",
-  "imeknjige": "Tajne uspješne prodaje",
-  "izdavac": "Školska knjiga",
-  "godinaizdanja": "2005",
-  "slika": "https://shop.skolskaknjiga.hr/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/0/6/060818.jpg",
-  "tip": "ostalo"
-},
-{
-  "id": "4",
-  "autor": "Šime Ungar",
-  "imeknjige": "Ne baš tako kratak Uvod u TEX S naglaskom na LATEX 2e",
-  "izdavac": "GiSKO",
-  "godinaizdanja": "2002",
-  "slika": "https://imgv2-1-f.scribdassets.com/img/document/371981537/original/2ee61ab4f3/1592116968?v=1",
-  "tip": "stručna"
-},
-{
-  "id": "5",
-  "autor": "B. Danger, dr. P. Gobel, dr. R. Knauer, dr. S. Nickels, dr. I. Richter, K. Viering",
-  "imeknjige": "Zemlja - tajanstven planet",
-  "izdavac": "Mozaik knjiga",
-  "godinaizdanja": "2011",
-  "slika": "https://zelenaknjizara.net/sites/default/files/Zemlja-tajanstven-planet.jpg",
-  "tip": "enciklopedija"
-},
-{
-  "id": "6",
-  "autor": "Jan Dobraczynski",
-  "imeknjige": "Čudotvorac iz Padove",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2020",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/_/u/_udotvorac-iz-padove.jpg",
-  "tip": "duhovna"
-},{
-  "id": "7",
-  "autor": "sv. Franjo Saleški",
-  "imeknjige": "Život u radosti",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2014",
-  "slika": "https://verbum.hr/media/catalog/product/cache/0f831c1845fc143d00d6d1ebc49f446a/3/7/3736.jpg",
-  "tip": "duhovna"
-},{
-  "id": "8",
-  "autor": "Marko Ivan Rupnik",
-  "imeknjige": "Umijeće življenja - Svakodnevica u ljepoti",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2016",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/9/6928.jpg",
-  "tip": "duhovna"
-},
-{
-  "id": "9",
-  "autor": "Victor Sion",
-  "imeknjige": "Živjeti sadašnji trenutak - Tajna svakodnevne radosti",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2017",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/4/4/448.jpg",
-  "tip": "duhovna"
-}
-,{
-  "id": "10",
-  "autor": "Jacques Philippe",
-  "imeknjige": "Istinsko milosrđe - Marija, opraštanje i pouzdanje",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2016",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/8/6894.jpg",
-  "tip": "duhovna"
-}
-,{
-  "id": "11",
-  "autor": "Jim Manney",
-  "imeknjige": "Egzamen - jednostavna molitva koja mijenja život",
-  "izdavac": "SKAC Palma",
-  "godinaizdanja": "2017",
-  "slika": "https://library.foi.hr/m3/s/573/n/12847--MX0001.JPG",
-  "tip": "duhovna"
-}
-,{
-  "id": "12",
-  "autor": "Fabrice Hadjadj",
-  "imeknjige": "Uskrsnuće - upute za uporabu",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2017",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/7/0/7074.jpg",
-  "tip": "duhovna"
-},{
-  "id": "13",
-  "autor": "sv. Ivan od Križa",
-  "imeknjige": "Tamna noć",
-  "izdavac": "Symposion",
-  "godinaizdanja": "2012",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/1/6/1666.jpg",
-  "tip": "duhovna"
-},{
-  "id": "14",
-  "autor": "Wilfrid Stinissen",
-  "imeknjige": "Novo vino - O plodovima Duha",
-  "izdavac": "Naklada sv. Antuna",
-  "godinaizdanja": "2015",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/8/6873.jpg",
-  "tip": "duhovna"
-},{
-  "id": "15",
-  "autor": "Valerio Albisetti",
-  "imeknjige": "Raditi sa srcem",
-  "izdavac": "Oko tri ujutro",
-  "godinaizdanja": "2005",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/1/9/1937.jpg",
-  "tip": "ostalo"
-},{
-  "id": "16",
-  "autor": "fra Slavko Barbarić",
-  "imeknjige": "Biseri ranjena srca",
-  "izdavac": "Mir Međugorje",
-  "godinaizdanja": "2009",
-  "slika": "https://figulus.hr/wp-content/uploads/2020/02/T-fra-slavko-barbaric%CC%81-biseri-ranjena-srca.jpeg",
-  "tip": "duhovna"
-},{
-  "id": "17",
-  "autor": "učenici OŠ Brezovica i Mirjana Rajter",
-  "imeknjige": "Stihovi pronađeni među vlatima trave: Zbornik haiku-pjesama učenika OŠ Brezovica",
-  "izdavac": "OŠ Brezovica",
-  "godinaizdanja": "2015",
-  "slika": "https://libri.hr/upload_data/site_photos/644173837739732202-account_id-1.jpg",
-  "tip": "ostalo"
-},{
-  "id": "18",
-  "autor": "C. S. Lewis",
-  "imeknjige": "Četiri ljubavi",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2019",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/1/5106.jpg",
-  "tip": "duhovna"
-},{
-  "id": "19",
-  "autor": "Karol Wojtyla",
-  "imeknjige": "Ljubav i odgovornost",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2019",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/8/5865.jpg",
-  "tip": "duhovna"
-},{
-  "id": "20",
-  "autor": "Aaron Kheriaty i o. John Cihak, STD",
-  "imeknjige": "Pobijedite depresiju snagom vjere: Medicinsko-duhovni pristup",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2015",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/8/5826.jpg",
-  "tip": "duhovna"
-},{
-  "id": "21",
-  "autor": "James Martin, SJ",
-  "imeknjige": "Isusovački vodič za (gotovo) sve",
-  "izdavac": "SKAC Palma",
-  "godinaizdanja": "2016",
-  "slika": "https://www.superknjizara.hr/photo/knjige/m_100099454.jpg",
-  "tip": "duhovna"
-},{
-  "id": "22",
-  "autor": "Nick Vujičić",
-  "imeknjige": "Nezaustavljiv",
-  "izdavac": "Bono Records",
-  "godinaizdanja": "2012",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/0/5011.jpg",
-  "tip": "duhovna"
-},{
-  "id": "23",
-  "autor": "Nick Vujičić",
-  "imeknjige": "Život bez ograničenja",
-  "izdavac": "Planetopija",
-  "godinaizdanja": "2011",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/4/4/4447.jpg",
-  "tip": "ostalo"
-},{
-  "id": "24",
-  "autor": "Henry Cloud i John Townsend",
-  "imeknjige": "Granice",
-  "izdavac": "Verbum",
-  "godinaizdanja": "2019",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/g/r/granice.jpg",
-  "tip": "ostalo"
-},{
-  "id": "25",
-  "autor": "Domagoj i Krešimir Jakumetović",
-  "imeknjige": "Ruža Bijela",
-  "izdavac": "UPT",
-  "godinaizdanja": "2019",
-  "slika": "nema",
-  "tip": "duhovna"
-},{
-  "id": "26",
-  "autor": "P. Crisogono de Jesus Sacramentado",
-  "imeknjige": "Ništa i sve: život sv. Ivana od Križa",
-  "izdavac": "KIZ",
-  "godinaizdanja": "2014",
-  "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/1/6146.jpg",
-  "tip": "duhovna"
-},{
-  "id": "27",
-  "autor": "Josip Balaško i Zrinka Krišković",
-  "imeknjige": "OŠ Brezovica Monografija: 160 godina školstva u Brezovici",
-  "izdavac": "OŠ Brezovica",
-  "godinaizdanja": "2010",
-  "slika": "https://www.knjizara-dominovic.hr/Slike/webPreview800-5244/306225.jpg",
-  "tip": "ostalo"
-},{
-  "id": "28",
-  "autor": "Zdravka Dean",
-  "imeknjige": "Đakovo",
-  "izdavac": "Dean",
-  "godinaizdanja": "1995",
-  "slika": "nema",
-  "tip": "enciklopedija"
-},{
-  "id": "29",
-  "autor": "Primo Soldi",
-  "imeknjige": "Pier Giorgio Frassati prijatelj siromaha",
-  "izdavac": "Salesiana",
-  "godinaizdanja": "2017",
-  "slika": "https://verbum.hr/media/catalog/product/cache/0f831c1845fc143d00d6d1ebc49f446a/2/3/2376.jpg",
-  "tip": "duhovna"
-}]  
+  "knjige": [
+    {
+      "id": "0",
+      "autor": "sv. Franjo Saleški",
+      "imeknjige": "Filotea",
+      "izdavac": "Naklada sv. Antuna",
+      "godinaizdanja": "2005",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/2/1/2190.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "1",
+      "autor": "Michel Tournade",
+      "imeknjige": "Filotea 21. stoljeća",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2015",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/4/9/4968.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "2",
+      "autor": "papa Franjo",
+      "imeknjige": "Sreća u ovom životu",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2018",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/s/r/sreca-u-ovom-zivotu.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "3",
+      "autor": "Kristina Susac",
+      "imeknjige": "Tajne uspješne prodaje",
+      "izdavac": "Školska knjiga",
+      "godinaizdanja": "2005",
+      "slika": "https://shop.skolskaknjiga.hr/media/catalog/product/cache/1/image/1800x/040ec09b1e35df139433887a97daa66f/0/6/060818.jpg",
+      "tipKnjige": "ostalo"
+    },
+    {
+      "id": "4",
+      "autor": "Šime Ungar",
+      "imeknjige": "Ne baš tako kratak Uvod u TEX S naglaskom na LATEX 2e",
+      "izdavac": "GiSKO",
+      "godinaizdanja": "2002",
+      "slika": "https://imgv2-1-f.scribdassets.com/img/document/371981537/original/2ee61ab4f3/1592116968?v=1",
+      "tipKnjige": "stručna"
+    },
+    {
+      "id": "5",
+      "autor": "B. Danger, dr. P. Gobel, dr. R. Knauer, dr. S. Nickels, dr. I. Richter, K. Viering",
+      "imeknjige": "Zemlja - tajanstven planet",
+      "izdavac": "Mozaik knjiga",
+      "godinaizdanja": "2011",
+      "slika": "https://zelenaknjizara.net/sites/default/files/Zemlja-tajanstven-planet.jpg",
+      "tipKnjige": "enciklopedija"
+    },
+    {
+      "id": "6",
+      "autor": "Jan Dobraczynski",
+      "imeknjige": "Čudotvorac iz Padove",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2020",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/_/u/_udotvorac-iz-padove.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "7",
+      "autor": "sv. Franjo Saleški",
+      "imeknjige": "Život u radosti",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2014",
+      "slika": "https://verbum.hr/media/catalog/product/cache/0f831c1845fc143d00d6d1ebc49f446a/3/7/3736.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "8",
+      "autor": "Marko Ivan Rupnik",
+      "imeknjige": "Umijeće življenja - Svakodnevica u ljepoti",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2016",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/9/6928.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "9",
+      "autor": "Victor Sion",
+      "imeknjige": "Živjeti sadašnji trenutak - Tajna svakodnevne radosti",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2017",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/4/4/448.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "10",
+      "autor": "Jacques Philippe",
+      "imeknjige": "Istinsko milosrđe - Marija, opraštanje i pouzdanje",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2016",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/8/6894.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "11",
+      "autor": "Jim Manney",
+      "imeknjige": "Egzamen - jednostavna molitva koja mijenja život",
+      "izdavac": "SKAC Palma",
+      "godinaizdanja": "2017",
+      "slika": "https://library.foi.hr/m3/s/573/n/12847--MX0001.JPG",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "12",
+      "autor": "Fabrice Hadjadj",
+      "imeknjige": "Uskrsnuće - upute za uporabu",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2017",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/7/0/7074.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "13",
+      "autor": "sv. Ivan od Križa",
+      "imeknjige": "Tamna noć",
+      "izdavac": "Symposion",
+      "godinaizdanja": "2012",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/1/6/1666.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "14",
+      "autor": "Wilfrid Stinissen",
+      "imeknjige": "Novo vino - O plodovima Duha",
+      "izdavac": "Naklada sv. Antuna",
+      "godinaizdanja": "2015",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/8/6873.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "15",
+      "autor": "Valerio Albisetti",
+      "imeknjige": "Raditi sa srcem",
+      "izdavac": "Oko tri ujutro",
+      "godinaizdanja": "2005",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/1/9/1937.jpg",
+      "tipKnjige": "ostalo"
+    },
+    {
+      "id": "16",
+      "autor": "fra Slavko Barbarić",
+      "imeknjige": "Biseri ranjena srca",
+      "izdavac": "Mir Međugorje",
+      "godinaizdanja": "2009",
+      "slika": "https://figulus.hr/wp-content/uploads/2020/02/T-fra-slavko-barbaric%CC%81-biseri-ranjena-srca.jpeg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "17",
+      "autor": "učenici OŠ Brezovica i Mirjana Rajter",
+      "imeknjige": "Stihovi pronađeni među vlatima trave: Zbornik haiku-pjesama učenika OŠ Brezovica",
+      "izdavac": "OŠ Brezovica",
+      "godinaizdanja": "2015",
+      "slika": "https://libri.hr/upload_data/site_photos/644173837739732202-account_id-1.jpg",
+      "tipKnjige": "ostalo"
+    },
+    {
+      "id": "18",
+      "autor": "C. S. Lewis",
+      "imeknjige": "Četiri ljubavi",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2019",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/1/5106.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "19",
+      "autor": "Karol Wojtyla",
+      "imeknjige": "Ljubav i odgovornost",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2019",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/8/5865.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "20",
+      "autor": "Aaron Kheriaty i o. John Cihak, STD",
+      "imeknjige": "Pobijedite depresiju snagom vjere: Medicinsko-duhovni pristup",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2015",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/8/5826.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "21",
+      "autor": "James Martin, SJ",
+      "imeknjige": "Isusovački vodič za (gotovo) sve",
+      "izdavac": "SKAC Palma",
+      "godinaizdanja": "2016",
+      "slika": "https://www.superknjizara.hr/photo/knjige/m_100099454.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "22",
+      "autor": "Nick Vujičić",
+      "imeknjige": "Nezaustavljiv",
+      "izdavac": "Bono Records",
+      "godinaizdanja": "2012",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/5/0/5011.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "23",
+      "autor": "Nick Vujičić",
+      "imeknjige": "Život bez ograničenja",
+      "izdavac": "Planetopija",
+      "godinaizdanja": "2011",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/4/4/4447.jpg",
+      "tipKnjige": "ostalo"
+    },
+    {
+      "id": "24",
+      "autor": "Henry Cloud i John Townsend",
+      "imeknjige": "Granice",
+      "izdavac": "Verbum",
+      "godinaizdanja": "2019",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/g/r/granice.jpg",
+      "tipKnjige": "ostalo"
+    },
+    {
+      "id": "25",
+      "autor": "Domagoj i Krešimir Jakumetović",
+      "imeknjige": "Ruža Bijela",
+      "izdavac": "UPT",
+      "godinaizdanja": "2019",
+      "slika": "nema",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "26",
+      "autor": "P. Crisogono de Jesus Sacramentado",
+      "imeknjige": "Ništa i sve: život sv. Ivana od Križa",
+      "izdavac": "KIZ",
+      "godinaizdanja": "2014",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/6/1/6146.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "id": "27",
+      "autor": "Josip Balaško i Zrinka Krišković",
+      "imeknjige": "OŠ Brezovica Monografija: 160 godina školstva u Brezovici",
+      "izdavac": "OŠ Brezovica",
+      "godinaizdanja": "2010",
+      "slika": "https://www.knjizara-dominovic.hr/Slike/webPreview800-5244/306225.jpg",
+      "tipKnjige": "ostalo"
+    },
+    {
+      "id": "28",
+      "autor": "Zdravka Dean",
+      "imeknjige": "Đakovo",
+      "izdavac": "Dean",
+      "godinaizdanja": "1995",
+      "slika": "nema",
+      "tipKnjige": "enciklopedija"
+    },
+    {
+      "id": "29",
+      "autor": "Primo Soldi",
+      "imeknjige": "Pier Giorgio Frassati prijatelj siromaha",
+      "izdavac": "Salesiana",
+      "godinaizdanja": "2017",
+      "slika": "https://verbum.hr/media/catalog/product/cache/0f831c1845fc143d00d6d1ebc49f446a/2/3/2376.jpg",
+      "tipKnjige": "duhovna"
+    },
+    {
+      "autor": "Lela Crnek",
+      "imeknjige": "Hagioterapijska ljekarna",
+      "izdavac": "Teovizija",
+      "godinaizdanja": "2011",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/4/7/4787.jpg",
+      "tipKnjige": "ostalo",
+      "id": "JvTnhnl"
+    },
+    {
+      "autor": "sv. Ivan od Križa",
+      "imeknjige": "Uspon na goru Karmel",
+      "izdavac": "Synposion",
+      "godinaizdanja": "2017",
+      "slika": "https://verbum.hr/media/catalog/product/cache/6b552494e4d4a60152e5cee20c61d11a/1/6/1674.jpg",
+      "tipKnjige": "duhovna",
+      "id": "Pa5lnBb"
+    }
+  ]
 }

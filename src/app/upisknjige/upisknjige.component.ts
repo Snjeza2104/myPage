@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Knjiga, TipKnjige } from '../shared/knjiga';
+import { KnjigaService } from '../services/knjiga.service';
 
 
 @Component({
@@ -13,6 +14,7 @@ export class UpisknjigeComponent implements OnInit {
 	knjiga: Knjiga;
   tipKnjige = TipKnjige;
   knjigacopy: Knjiga;
+  errMess: string;
 
   formErrors={
   'autor':'',
@@ -35,7 +37,7 @@ export class UpisknjigeComponent implements OnInit {
 
   @ViewChild('fform') feedbackFormDirective;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private knjigaservice: KnjigaService) {
   this.createForm();
   }
 
@@ -44,11 +46,10 @@ export class UpisknjigeComponent implements OnInit {
 
   createForm(){
   this.knjigaForm=this.fb.group({
-  id:[0,Validators.required],
   autor:['', Validators.required],
   imeknjige:['', Validators.required],
   izdavac:['', Validators.required],
-  godinaizdanja:[0, [Validators.required, Validators.pattern]],
+  godinaizdanja:[, [Validators.required, Validators.pattern]],
   slika:['', Validators.required],
   tipKnjige: ['ostalo',Validators.required]
   });
@@ -60,18 +61,17 @@ export class UpisknjigeComponent implements OnInit {
   onSubmit(){
   this.knjiga=this.knjigaForm.value;
   console.log(this.knjiga);
-/*  this.knjigacopy.push(this.knjiga);
-  this.knjigaService.putKnjiga(this.knjigacopy)
+
+  this.knjigaservice.postKnjiga(this.knjiga)
   .subscribe(knjiga=>{
-    this.knjiga=knjiga; this.knjigacopy=knjiga;
-  }, errmess=>{this.knjiga=null; this.knjigacopy=null; this.errMsg=<any>errmess;});
-  */
+    this.knjiga=knjiga;
+  }, errmess=>{this.knjiga=null; this.errMess=<any>errmess;});
+
   this.knjigaForm.reset({
-    id:'',
     autor:'',
     imeknjige:'',
     izdavac:'',
-    godinaizdanja:2020,
+    godinaizdanja: 2020,
     slika:'',
     tipKnjige: 'ostalo'
   });

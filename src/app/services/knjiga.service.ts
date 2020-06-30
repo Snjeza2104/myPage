@@ -28,13 +28,15 @@ getKnjige(): Observable<Knjiga[]> {
     .pipe(catchError(this.processHTTPMsgService.handleError));;
   }
 
-  putKnjiga(knjiga:Knjiga): Observable<Knjiga>{
+  postKnjiga(knjiga:Knjiga): Observable<Knjiga>{
     const httpOptions={
       headers: new HttpHeaders({
       'Content-Type':'application/json'
       })
     };
-    return this.http.put<Knjiga>(baseURL+'knjige/'+knjiga.id, knjiga, httpOptions)
+    console.log("Do ovdje radi");
+    console.log(knjiga);
+    return this.http.post<Knjiga>(baseURL+'knjige/', knjiga, httpOptions)
     .pipe(catchError(this.processHTTPMsgService.handleError));
   }
 

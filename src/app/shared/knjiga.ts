@@ -1,5 +1,5 @@
 export class Knjiga{
-	id: string;
+	id:string;
 	autor: string;
 	imeknjige: string;
 	izdavac: string;
